@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is it Chanukah? 🕎</title>
+    <link rel="stylesheet" href="{% static 'isitchanukah/styles.css' %}">
+</head>
+<body>
+    {% if chanukah %}
+        <h1>YES</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+</body>
+</html>
